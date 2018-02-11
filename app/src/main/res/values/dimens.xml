@@ -1,0 +1,8 @@
+<resources>
+        <dimen name="fab_margin">16dp</dimen>
+        <dimen name="margin">16dp</dimen>
+        <dimen name="button_margin">16dp</dimen>
+        <dimen name="padding">5dp</dimen>
+        <dimen name="padding_edittext">10dp</dimen>
+        <dimen name="margin_row_item">1dp</dimen>
+</resources>

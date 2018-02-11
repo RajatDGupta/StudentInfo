@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.neeraj.studentinfo.activity.DataInsertActivity"
+    android:background="@color/colorBackground"
+    >
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/et_userRollNo"
+                android:hint="@string/roll_no"
+                style="@style/AppMatrialTheme.EditTextStyle"
+                android:digits="0123456789"
+                android:maxLength="3"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:hint="@string/student_name"
+                style="@style/AppMatrialTheme.EditTextStyle"
+                android:inputType="textPersonName"
+                />
+
+             <EditText
+                 android:id="@+id/et_userMathsMark"
+                 android:hint="@string/maths_mark"
+                 style="@style/AppMatrialTheme.EditTextStyle"
+                 android:digits="0123456789"
+                 android:maxLength="3"
+                 android:inputType="number"
+                 />
+
+             <EditText
+                 android:id="@+id/et_userScienceMark"
+                 android:hint="@string/science_mark"
+                 style="@style/AppMatrialTheme.EditTextStyle"
+                 android:digits="0123456789"
+                 android:maxLength="3"
+                 android:inputType="number"
+                 />
+
+             <EditText
+                 android:id="@+id/et_userEnglishMark"
+                 android:hint="@string/english_mark"
+                 style="@style/AppMatrialTheme.EditTextStyle"
+                 android:digits="0123456789"
+                 android:maxLength="3"
+                 android:inputType="number"
+                 />
+
+             <Button
+                 android:id="@+id/bt_inserData"
+                 style="@style/AppMatrialTheme.ButtonStyle"
+                 android:text="@string/submit_data"
+                 />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
